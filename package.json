@@ -1,32 +1,30 @@
 {
-  "name": "mailer",
+  "name": "mailer-microservice",
   "version": "1.0.0",
-  "description": "send mails",
-  "main": "index.js",
+  "description": "A simple QR generator and mailer microservice written in Node.js",
+  "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node index.js",
-    "dev-run": "nodemon index.js"
+    "start": "nodemon app.js"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GDGVIT/Mailer-Microservice.git"
+  },
+  "author": "Amogh Lele",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/GDGVIT/Mailer-Microservice/issues"
+  },
+  "homepage": "https://github.com/GDGVIT/Mailer-Microservice#readme",
   "dependencies": {
-    "axios": "^0.18.0",
+    "@sendgrid/mail": "^6.4.0",
+    "axios": "^0.19.0",
     "body-parser": "^1.19.0",
-    "convert-csv-to-json": "0.0.14",
-    "csvjson": "^5.1.0",
-    "dotenv": "^6.1.0",
-    "express": "^4.16.4",
-    "express-handlebars": "^3.1.0",
-    "multer": "^1.4.1",
-    "nodemailer": "^6.0.0",
-    "qrcode": "^1.3.3"
-  },
-  "devDependencies": {
-    "eslint": "^5.16.0",
-    "eslint-config-airbnb-base": "^13.1.0",
-    "eslint-config-google": "^0.13.0",
-    "eslint-plugin-import": "^2.17.3",
-    "expect": "^24.8.0",
-    "mocha": "^5.1.1",
-    "nodemon": "^1.18.10"
+    "express": "^4.17.1",
+    "express-validator": "^6.1.1",
+    "md5": "^2.2.1",
+    "nodemailer": "^6.3.0",
+    "qrcode": "^1.4.1",
+    "showdown": "^1.9.0"
   }
 }
